@@ -7,6 +7,7 @@ import Causes from "@/sections/Causes";
 import Services from "@/sections/Services";
 import Gallery from "@/sections/Gallery";
 import Join from "@/sections/Join";
+import Reviews from "@/sections/Reviews";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,6 +21,7 @@ export default function Home() {
       <Services />
       <Gallery />
       <Join />
+      <Reviews />
     </>
   );
 }

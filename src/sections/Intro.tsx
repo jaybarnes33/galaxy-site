@@ -18,9 +18,11 @@ export default function Intro() {
             width={50}
             height={10}
           />
-          <div className="flex gap-9 uppercase text-neutral-400 py-3">
+          <div className="flex gap-4 md:gap-9 uppercase text-neutral-400 py-3">
             {focus.map((item) => (
-              <span key={item}>{item}</span>
+              <span className="text-xs" key={item}>
+                {item}
+              </span>
             ))}
           </div>
           <Image
@@ -36,20 +38,20 @@ export default function Intro() {
         <div className="flex gap-4 my-5">
           <Image
             src="/images/image.png"
-            className="w-[200px] sm:w-[350px] md:w-[500px]"
+            className="w-[160px] sm:w-[350px] md:w-[500px]"
             width={300}
             height={200}
             alt="Children smiling"
           />
           <Image
             src="/images/image (1).png"
-            className="w-[40%]"
+            className="w-[30%]"
             width={200}
             height={400}
             alt="Children smiling"
           />
         </div>
-        <div className="bg-[#f4f4f442] absolute bottom-0 py-10 px-4 w-full flex justify-around">
+        <div className="bg-[#f4f4f442] absolute bottom-0 py-10 px-4 overflow-scroll flex justify-around gap-3">
           <Image src="/images/MTN.png" width={70} height={40} alt="MTN" />
           <Image src="/images/MTN.png" width={70} height={40} alt="MTN" />
           <Image src="/images/MTN.png" width={70} height={40} alt="MTN" />
